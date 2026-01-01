@@ -195,10 +195,13 @@ def display_chat_message(role: str, content: str, sources: list = None):
 def main():
     """Main application function"""
     
-    # Header with Chatbot Image/Icon
+    # Header with Chatbot Image
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("chatbot.png", width=200)
+    
     st.markdown(f'''
-    <div style="text-align: center; padding: 2rem 0 1rem 0;">
-        <div style="font-size: 5rem; margin-bottom: 1rem;">💊</div>
+    <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
         <div class="main-header">{Config.APP_TITLE}</div>
         <div class="sub-header">
             AI-Powered Expert Guidance for Pharmaceutical & Medical Device Validation<br>
