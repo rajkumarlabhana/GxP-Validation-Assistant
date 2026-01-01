@@ -195,10 +195,23 @@ def display_chat_message(role: str, content: str, sources: list = None):
 def main():
     """Main application function"""
     
-    # Header with Chatbot Image
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
-        st.image("chatbot.png", width=200)
+    # Header with Chatbot Icon
+    st.markdown('''
+    <div style="text-align: center; padding: 1rem 0;">
+        <div style="
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        ">🤖</div>
+    </div>
+    ''', unsafe_allow_html=True)
     
     st.markdown(f'''
     <div style="text-align: center; padding: 0.5rem 0 1rem 0;">
