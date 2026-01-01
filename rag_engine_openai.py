@@ -8,6 +8,7 @@ from config_openai import Config
 from vector_store_openai import VectorStore
 
 # Setup logging
+Config.LOGS_DIR.mkdir(exist_ok=True)  # Create logs directory if it doesn't exist
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',

@@ -10,6 +10,7 @@ from openai import OpenAI
 from config_openai import Config
 
 # Setup logging
+Config.LOGS_DIR.mkdir(exist_ok=True)  # Create logs directory if it doesn't exist
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',

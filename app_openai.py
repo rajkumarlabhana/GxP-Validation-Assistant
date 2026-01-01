@@ -11,6 +11,7 @@ from vector_store_openai import VectorStore
 from rag_engine_openai import RAGEngine
 
 # Setup logging
+Config.LOGS_DIR.mkdir(exist_ok=True)  # Create logs directory if it doesn't exist
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
