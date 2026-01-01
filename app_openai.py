@@ -177,7 +177,7 @@ def display_chat_message(role: str, content: str, sources: list = None):
     else:
         st.markdown(f"""
         <div class="chat-message assistant-message">
-            <strong>🤖 GxP Assistant:</strong><br>
+            <strong>💊 GxP Assistant:</strong><br>
             {content}
         </div>
         """, unsafe_allow_html=True)
@@ -198,7 +198,7 @@ def main():
     # Header with Chatbot Image/Icon
     st.markdown(f'''
     <div style="text-align: center; padding: 2rem 0 1rem 0;">
-        <div style="font-size: 5rem; margin-bottom: 1rem;">🤖</div>
+        <div style="font-size: 5rem; margin-bottom: 1rem;">💊</div>
         <div class="main-header">{Config.APP_TITLE}</div>
         <div class="sub-header">
             AI-Powered Expert Guidance for Pharmaceutical & Medical Device Validation<br>
