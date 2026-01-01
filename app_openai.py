@@ -177,7 +177,7 @@ def display_chat_message(role: str, content: str, sources: list = None):
     else:
         st.markdown(f"""
         <div class="chat-message assistant-message">
-            <strong>💊 GxP Assistant:</strong><br>
+            <strong>🤖 GxP Assistant:</strong><br>
             {content}
         </div>
         """, unsafe_allow_html=True)
