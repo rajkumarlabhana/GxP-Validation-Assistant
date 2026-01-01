@@ -1,6 +1,7 @@
 """
 GxP Validation Assistant
 IIT Guwahati Capstone Project 2026
+Version: 1.0.1
 """
 import streamlit as st
 import logging
