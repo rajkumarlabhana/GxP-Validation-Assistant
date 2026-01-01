@@ -195,7 +195,7 @@ def display_chat_message(role: str, content: str, sources: list = None):
 def main():
     """Main application function"""
     
-    # Header with Chatbot Icon
+    # Header with Robot Chatbot Icon in Gradient Circle
     st.markdown('''
     <div style="text-align: center; padding: 1rem 0;">
         <div style="
